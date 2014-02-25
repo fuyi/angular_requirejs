@@ -1,7 +1,9 @@
 define(['./module'], function (controllers) {
     'use strict';
-    controllers.controller('MyCtrl1', ['$scope',function ($scope) {
-        $scope.first_name = 'Yi';
-        $scope.last_name = 'FU';
+    controllers.controller('MyCtrl1', ['$scope','Teams',function ($scope, Teams) {
+        Teams.query(function(response){
+            $scope.total_teams = response.length;
+        });
     }]);
 });
+// TODO add unit test to controller

@@ -8,6 +8,7 @@ require.config({
     paths: {
         'angular': '../lib/angular/angular',
         'angular-route': '../lib/angular-route/angular-route',
+        'angular-resource': '../lib/angular-resource/angular-resource',
         'domReady': '../lib/requirejs-domready/domReady',
         'jquery': '../lib/jquery/dist/jquery'
     },
@@ -21,6 +22,9 @@ require.config({
             exports: 'angular'
         },
         'angular-route': {
+            deps: ['angular']
+        },
+        'angular-resource': {
             deps: ['angular']
         }
     },

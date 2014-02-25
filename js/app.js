@@ -5,6 +5,7 @@
 define([
     'angular',
     'angular-route',
+    'angular-resource',
     './controllers/index',
     './directives/index',
     './filters/index',
@@ -17,6 +18,7 @@ define([
         'app.directives',
         'app.filters',
         'app.services',
-        'ngRoute'
+        'ngRoute',
+        'ngResource'
     ]);
 });
