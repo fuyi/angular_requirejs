@@ -12,6 +12,7 @@
     "angular-resource": "latest",
     "requirejs": "latest",
     "requirejs-domready": "latest",
-    "jquery": "latest"
+    "jquery": "latest",
+    "bootstrap":"latest"
   }
 }
